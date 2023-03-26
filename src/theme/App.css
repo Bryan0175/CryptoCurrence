@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #25273E;
+    color: white;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.App{
+    position: relative;
+}
+main{
+    display: grid;
+    grid: 1fr / 1fr 1fr;
+    place-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.751);
+    padding: 50px 0;
+}
+.cards_con{
+    width: 90%;
+    height: 509px;
+    display: grid;
+    grid: repeat(3,1fr) / 1fr;
+    align-self: stretch;
+    gap: 20px;
+}
+.green, .red{
+    font-weight: bold;
+}
+
+h2{
+    font-size: 20px;
+}
+
+.container-main{
+    background: url('../assets/img/bg-statistic.jpg');
+    width: 100%;
+}
+
+.green{
+    color: rgb(51, 156, 51);
+}
+
+.red{
+    color: rgb(214, 64, 64);
+}
+
+@media screen and (min-width:768px) {
+
+    h2{
+        font-size: 24px;
+    }
+}
